@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 class Operator{
+    /* 操作数，有可能是寄存器，有可能是直接的数值 */
     public static final int REG = 0;
     public static final int INT = 1;
 

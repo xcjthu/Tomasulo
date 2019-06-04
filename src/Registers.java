@@ -1,14 +1,23 @@
 import java.util.ArrayList;
 
 public class Registers{
+    /* 寄存器状态，是在等待还是已经有数值 */
     public class Reg{
-        public String status;
+        static public final int LOADER = 0; // 等待loader出值
+        static public final int COM = 1;    // 等待运算器出值
+
+        public int comp;
+        public int number;
         public boolean wait = false;
 
         public Reg(){}
 
-        public void setStatus(String _status){
-            status = _status;
+        public void setStatus(boolean _wait, int _comp = -1, int _num = -1){
+            wait = _wait;
+
+            comp = _comp;
+            number = _num;
+
         }
     }
 
