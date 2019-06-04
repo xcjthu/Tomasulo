@@ -19,7 +19,7 @@ public class Components{
     public void runInst(Inst inst){
         busy = true;
         op = inst.opid;
-        
+
 
     }
 
