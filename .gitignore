@@ -1,3 +1,4 @@
 .idea
-Tomasulo.iml
+out
+*.iml
 **.DS_Store
