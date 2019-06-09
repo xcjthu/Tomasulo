@@ -4,7 +4,7 @@ public class Main {
         try {
 
 
-            Tomasulo tomasulo = new Tomasulo("/Users/xcj/Desktop/learn/系统结构/Tomasulo/Tomasulo/experiment2/test0.nel");
+            Tomasulo tomasulo = new Tomasulo("experiment2/test0.nel");
 
             TomasuloGUI gui = new TomasuloGUI(tomasulo);
 
