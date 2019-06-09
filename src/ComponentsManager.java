@@ -64,17 +64,20 @@ class Buffer{
     }
 
     public boolean checkReady(){
+        System.out.println(inst.strinst);
         if (! qj.ready) {
             qj.ready = qj.buffer.completed;
             qj.value= qj.buffer.tagetValue;
+
+            System.out.println(" qj.buffer: " + qj.buffer.bufferName + " qj.ready: " + qj.ready);
         }
         if (! qk.ready) {
             qk.ready = qk.buffer.completed;
             qk.value= qk.buffer.tagetValue;
+
+            System.out.println(" qk.buffer: " + qk.buffer.bufferName + "qk.ready: " + qk.ready + "\t");
         }
-        // System.out.println(inst.strinst);
-        // System.out.print(" qj.ready: " + qj.ready);
-        // System.out.println(" qk.ready: " + qk.ready + "\t");
+
         if (qj.ready && qk.ready) {
             if (inst.opid == Inst.JUMP)
                 inst.jump = (qj.value == qk.value);

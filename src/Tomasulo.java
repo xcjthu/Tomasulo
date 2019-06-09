@@ -144,10 +144,11 @@ public class Tomasulo {
         issueInst();
         match();
         run(cycles);
+        writeBack();
         checkReady();
         // System.out.println("after running");
         match();
-        writeBack();
+
 
         cycles ++;
     }
