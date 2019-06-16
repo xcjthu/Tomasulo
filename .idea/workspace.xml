@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84559568-59bb-467d-a9a8-0c954f845bc3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment2/test2.nel" beforeDir="false" afterPath="$PROJECT_DIR$/experiment2/test2.nel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComponentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComponentsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tomasulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tomasulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TomasuloGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TomasuloGUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Inst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="164">
+              <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,12 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Registers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-              <folding>
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1580#1581#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="469">
+              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -45,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComponentsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3375">
-              <caret line="228" selection-start-line="228" selection-end-line="228" />
+            <state relative-caret-position="-384">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,12 +61,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tomasulo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="1350">
+              <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4187#4188#0" expanded="true" />
-                <element signature="e#4241#4242#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +87,16 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -93,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TomasuloGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+            <state relative-caret-position="4215">
+              <caret line="283" column="54" selection-start-line="283" selection-start-column="54" selection-end-line="283" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,11 +128,15 @@
       <find>jump</find>
       <find>jumptest</find>
       <find>jumpReg0</find>
-      <find>check</find>
       <find>time</find>
       <find>jumpjump</find>
       <find>[complete inst] DIV,F4,F3,F1</find>
       <find>== -1</find>
+      <find>check</find>
+      <find>Tomasulo</find>
+      <find>System</find>
+      <find>out</find>
+      <find>begin waiting</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,21 +146,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Reservation.java" />
-        <option value="$PROJECT_DIR$/src/Registers.java" />
-        <option value="$PROJECT_DIR$/src/Tomasulo.java" />
         <option value="$PROJECT_DIR$/src/UIWindow.java" />
         <option value="$PROJECT_DIR$/src/LoaderManager.java" />
-        <option value="$PROJECT_DIR$/src/Inst.java" />
+        <option value="$PROJECT_DIR$/src/Registers.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/ComponentsManager.java" />
         <option value="$PROJECT_DIR$/src/TomasuloGUI.java" />
+        <option value="$PROJECT_DIR$/src/Inst.java" />
+        <option value="$PROJECT_DIR$/src/Tomasulo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,7 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,19 +180,27 @@
             <path>
               <item name="Tomasulo_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tomasulo_new" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tomasulo_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tomasulo_new" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -220,15 +244,16 @@
       <updated>1559740589415</updated>
       <workItem from="1559740594289" duration="59590000" />
       <workItem from="1559966021138" duration="187000" />
-      <workItem from="1560069485126" duration="613000" />
+      <workItem from="1560052405014" duration="7538000" />
+      <workItem from="1560674099005" duration="1735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60390000" />
+    <option name="totallyTimeSpent" value="70244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -236,11 +261,11 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18884121" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19098713" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
@@ -250,7 +275,7 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.3057325" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.3053435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -260,6 +285,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,37 +294,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Reservation.java" />
     <entry file="file://$PROJECT_DIR$/src/UIWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/Inst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Registers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-          <folding>
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LoaderManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -310,10 +305,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TomasuloGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+        <state relative-caret-position="4215">
+          <caret line="283" column="54" selection-start-line="283" selection-start-column="54" selection-end-line="283" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Registers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -322,12 +351,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tomasulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="1350">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4187#4188#0" expanded="true" />
-            <element signature="e#4241#4242#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -335,9 +362,80 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -175,17 +175,21 @@ class InstructionPanel extends JPanel{
     JLabel[] instructionLabels;
 
     ArrayList<Inst> insts;
+    int lineNum;
     InstructionPanel(ArrayList<Inst> instructions){
         super();
         insts = instructions;
 
         leftPanel = new JPanel();
         rightPanel = new JPanel();
-        int lineNum = instructions.size();
+        lineNum = instructions.size();
+        if (lineNum > 100)
+            lineNum = 100;
 
         leftPanel.setLayout(new GridLayout(lineNum+1, 1));
         rightPanel.setLayout(new GridLayout(lineNum+1, 3));
         instructionLabels = new JLabel[(lineNum + 1) * 4];
+
 
         for (int i = 0; i < instructionLabels.length; i++) {
             instructionLabels[i] = new JLabel("", JLabel.CENTER);
@@ -199,7 +203,7 @@ class InstructionPanel extends JPanel{
         instructionLabels[1].setText("Issue");
         instructionLabels[2].setText("Exec");
         instructionLabels[3].setText("WB");
-        for (int i = 0; i < instructions.size(); i++) {
+        for (int i = 0; i < lineNum; i++) {
             instructionLabels[4 + 4 * i].setText(instructions.get(i).strinst);
         }
         this.setLayout(new GridLayout(1, 2));
@@ -208,7 +212,7 @@ class InstructionPanel extends JPanel{
     }
 
     public void updateValue() {
-        for(int i = 0; i < insts.size(); i ++ ){
+        for(int i = 0; i < lineNum; i ++ ){
             if (insts.get(i).issuetime != -1)
                 instructionLabels[5 + 4 * i].setText("" + insts.get(i).issuetime);
             if (insts.get(i).runingtime != -1)
@@ -242,15 +246,19 @@ public class TomasuloGUI extends JFrame {
         registerPanel = new RegisterPanel();
         controlPanel = new ControlPanel();
         instructionPanel = new InstructionPanel(tomasulo.instList);
-        // instructionPanel.setPreferredSize(new Dimension(200, 25 * (tomasulo.instList.size() + 1)));
-        //scrollPane = new JScrollPane(instructionPanel);
+        if (tomasulo.instList.size() > 100)
+            instructionPanel.setPreferredSize(new Dimension(200, 25 * (100 + 1)));
+        else
+            instructionPanel.setPreferredSize(new Dimension(200, 25 * (tomasulo.instList.size() + 1)));
+        scrollPane = new JScrollPane(instructionPanel);
 
 
         controlPanel.setBounds(100, 50, 400, 50);
         resPanel.setBounds(100, 100, 800, 200);
         bufferPanel.setBounds(100, 320, 300, 135);
-        instructionPanel.setBounds(400, 320, 500, 300);
-        registerPanel.setBounds(100, 630, 800, 200);
+        //instructionPanel.setBounds(400, 320, 500, 300);
+        scrollPane.setBounds(400, 320, 500, 300);
+        registerPanel.setBounds(100, 630, 900, 200);
 
         controlPanel.button.addActionListener(new ActionListener() {
             @Override
@@ -267,10 +275,13 @@ public class TomasuloGUI extends JFrame {
         controlPanel.endButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                long beginTime = System.currentTimeMillis();
                 while (!tomasulo.finish())
                     tomasulo.timeCycle();
                 controlPanel.button.setText("finish");
                 updateDisplay();
+                long endTime = System.currentTimeMillis();
+                System.out.println(endTime - beginTime);;
             }
         });
 
@@ -281,7 +292,8 @@ public class TomasuloGUI extends JFrame {
         this.add(registerPanel);
         this.add(controlPanel);
         this.add(registerPanel);
-        this.add(instructionPanel);
+        //this.add(instructionPanel);
+        this.add(scrollPane);
         this.setVisible(true);
 
 

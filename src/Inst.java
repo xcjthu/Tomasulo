@@ -40,8 +40,8 @@ public class Inst {
     public static final int JUMP = 5;
 
     static final String[] InstName = {"Add", "Sub", "Mul", "Div", "LD", "Jump"};
-    //public static final int[] CYCLE = {3, 3, 12, 40, 3, 1};
-    public static final int[] CYCLE = {3, 3, 4, 4, 3, 1};
+    public static final int[] CYCLE = {3, 3, 12, 40, 3, 1};
+    // public static final int[] CYCLE = {3, 3, 4, 4, 3, 1};
 
 
     public int opid;

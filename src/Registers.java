@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 
 public class Registers{
-    /* 寄存器状态，是在等待还是已经有数值 */
     class Reg{
-        // static public final int LOADER = 0; // 等待loader出值
-        // static public final int COM = 1;    // 等待运算器出值
-
 
         public boolean wait = false;
         public Buffer waitBuffer;

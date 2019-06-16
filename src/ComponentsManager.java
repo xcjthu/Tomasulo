@@ -64,17 +64,20 @@ class Buffer{
     }
 
     public boolean checkReady(){
+        // System.out.println(inst.strinst);
         if (! qj.ready) {
             qj.ready = qj.buffer.completed;
             qj.value= qj.buffer.tagetValue;
+
+            // .out.println(" qj.buffer: " + qj.buffer.bufferName + " qj.ready: " + qj.ready);
         }
         if (! qk.ready) {
             qk.ready = qk.buffer.completed;
             qk.value= qk.buffer.tagetValue;
+
+            // System.out.println(" qk.buffer: " + qk.buffer.bufferName + "qk.ready: " + qk.ready + "\t");
         }
-        // System.out.println(inst.strinst);
-        // System.out.print(" qj.ready: " + qj.ready);
-        // System.out.println(" qk.ready: " + qk.ready + "\t");
+
         if (qj.ready && qk.ready) {
             if (inst.opid == Inst.JUMP)
                 inst.jump = (qj.value == qk.value);
@@ -113,7 +116,7 @@ class Buffer{
         }
         tagetValue = ans;
 
-        System.out.println("[complete inst] " + inst.strinst + " value: " + tagetValue);
+        // System.out.println("[complete inst] " + inst.strinst + " value: " + tagetValue);
 
         if (inst.opid != Inst.JUMP && Registers.getInstance().getBuffer(targetRegId) == this){
 
@@ -242,7 +245,7 @@ public class ComponentsManager {
         for (int i = 0; i < buffers.size(); ++ i){
             if (buffers.get(i).occupied)
                 continue;
-            System.out.println("[issue Inst]\t" + name + "\t" + inst.strinst + "\t\tto buffer " + i);
+            // System.out.println("[issue Inst]\t" + name + "\t" + inst.strinst + "\t\tto buffer " + i);
             buffers.get(i).issueInst(inst);
             return true;
         }
@@ -259,7 +262,7 @@ public class ComponentsManager {
             for(; j < buffers.size(); ++ j){
 
                 if (buffers.get(j).occupied && ! buffers.get(j).running && buffers.get(j).checkReady()) {
-                    System.out.println("[MATCH]\t" + name + "\tmatch calculator " + i + " buffer " + j);
+                    // System.out.println("[MATCH]\t" + name + "\tmatch calculator " + i + " buffer " + j);
                     calculators.get(i).getInst(buffers.get(j));
                     j ++;
                     break;

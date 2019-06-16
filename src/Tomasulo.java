@@ -23,10 +23,14 @@ public class Tomasulo {
 
     public Tomasulo(String filename) throws IOException {
         fin = new BufferedReader(new FileReader(filename));
+        int count = 0;
         String line  = fin.readLine();
         while (line != null){
+            count += 1;
             instList.add(new Inst(line));
             line = fin.readLine();
+            if (count % 10000 == 0)
+                System.out.println(count);
         }
         nowInst = instList.get(pc);
         pc ++;
@@ -67,11 +71,11 @@ public class Tomasulo {
 
 
                 jumpwaiting = false;
-                System.out.println(nowInst.strinst + " jumpjump " + nowInst.jump);
+                // System.out.println(nowInst.strinst + " jumpjump " + nowInst.jump);
                 if (nowInst.jump) {
                     pc = pc + nowInst.operators.get(2).regid - 1;
-                    System.out.println(nowInst.operators.get(2).regid);
-                    System.out.println("jump!!");
+                    // System.out.println(nowInst.operators.get(2).regid);
+                    // System.out.println("jump!!");
                 }
                 nowInst = nextInst();
             }else
@@ -84,7 +88,7 @@ public class Tomasulo {
         switch (nowInst.opid){
             case Inst.JUMP:
                 jumpwaiting = true;
-                System.out.println("begin waiting");
+                // System.out.println("begin waiting");
                 // System.out.println("jumpReg0 " + nowInst.operators.get(0).regid);
             case Inst.ADD:
             case Inst.SUB:
@@ -132,7 +136,7 @@ public class Tomasulo {
     }
 
     public void timeCycle(){
-        System.out.println("\n========== In time cycle " + cycles + " pc:" + pc + "==========");
+        // System.out.println("\n========== In time cycle " + cycles + " pc:" + pc + "==========");
         //System.out.println("In time cycle: " + cycles);
         /*
         issueInst();
@@ -144,10 +148,11 @@ public class Tomasulo {
         issueInst();
         match();
         run(cycles);
+        writeBack();
         checkReady();
         // System.out.println("after running");
         match();
-        writeBack();
+
 
         cycles ++;
     }

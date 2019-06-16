@@ -4,7 +4,7 @@ public class Main {
         try {
 
 
-            Tomasulo tomasulo = new Tomasulo("experiment2/test0.nel");
+            Tomasulo tomasulo = new Tomasulo("Tag/test_self.nel");
 
             TomasuloGUI gui = new TomasuloGUI(tomasulo);
 
